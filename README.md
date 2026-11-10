@@ -65,3 +65,5 @@ Booking feature: Facility reservations with approval and overlap validation.
 
 Maintenance feature: Service ticket creation, technician assignment, inspection and resolution.
 feature-maintenance
+
+Review workflow: Feature changes are submitted through pull requests for review before integration.
