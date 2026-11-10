@@ -57,3 +57,7 @@ git tag v1.0.0
 
 ## Important limitations
 This is a compact academic prototype. Demo passwords are plain text and must not be used in production. SQLite is suitable for a local demonstration; for a real multi-campus production system, use PostgreSQL or another server database, proper password hashing, HTTPS, robust identity management, and a reverse proxy/load balancer. The second container is a local two-instance demonstration sharing one SQLite volume, not a production high-availability architecture.
+
+Booking feature: Facility reservations with approval and overlap validation.
+
+Booking feature: Facility reservations with approval and overlap validation.
