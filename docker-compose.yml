@@ -1,0 +1,26 @@
+services:
+  web:
+    build: .
+    container_name: smart-campus-web
+    ports:
+      - "5000:5000"
+    environment:
+      - DB_PATH=/data/campus.db
+      - SECRET_KEY=replace-this-before-production
+    volumes:
+      - campus_data:/data
+    restart: unless-stopped
+  web2:
+    build: .
+    container_name: smart-campus-web2
+    profiles: ["scale"]
+    ports:
+      - "5001:5000"
+    environment:
+      - DB_PATH=/data/campus.db
+      - SECRET_KEY=replace-this-before-production
+    volumes:
+      - campus_data:/data
+    restart: unless-stopped
+volumes:
+  campus_data:
