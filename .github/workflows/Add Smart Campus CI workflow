@@ -36,3 +36,7 @@ jobs:
         run: |
           test -f app.py
           echo "Smart Campus application file verified"
+      - name: Temporary failure demonstration
+        run: |
+          echo "Testing pipeline failure"
+          exit 1
